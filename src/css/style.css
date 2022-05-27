@@ -1,0 +1,364 @@
+@import "animations.css";
+/**
+Generals style
+**/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+main{
+
+  background-color: #058f9b;
+}
+a{
+    color: #D6E0E5;
+    text-decoration: none;
+}
+a:hover{
+  color: #0D6791;
+}
+.bt-link{
+  width: auto;
+  padding: 5px 12px;
+  color: #F8AB30;
+  border: 1px solid #F8AB30;
+
+}
+.bt-link:hover{
+  background-color:#F8AB30;
+  color: black;
+
+}
+
+
+/*********
+Header
+******/
+.header-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #084663;
+
+}
+
+.address{
+    position: absolute;
+    left:15px;
+    top: 10px;
+    font-size:18px;
+    font-weight: bold;
+    color: white;
+}
+
+.address i{
+    color: #F8AB30;
+
+}
+.icon-menu{
+    font-size: 30px;
+    position: absolute;
+    right:15px;
+    top: 5px;
+    cursor: pointer;
+    color: white;
+
+}
+.nav-container{
+  display: none;
+   height: 100vh;
+}
+.logo{
+
+    padding: 15px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+
+}
+.logo div{
+    font-size: 60px;
+    color: #F8AB30;
+    font-weight: bold;
+}
+.logo h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #F8AB30;
+    font-weight: bold;
+}
+.logo h2{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.links-container{
+    margin-top: 40px;
+    color: rgb(133, 129, 129);
+
+
+}
+.link{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 20px;
+    border-top: 0.5px solid rgba(128, 123, 123, 0.226);
+}
+.link a {
+    display: inline-block;
+    margin-right: 8px;
+}
+.visible .icon-menu{
+  display: none;
+}
+.link a:hover{
+  color: #0D6791;
+}
+.visible .nav-container{
+  display: block;
+}
+
+.tags{
+  display: block;
+  font-style: italic;
+  font-size: 17px;
+  color: white;
+  opacity: 0.2;
+
+}
+.tags:last-child{
+  margin-bottom: 0;
+
+}
+/**
+Home
+****/
+.home-content{
+  padding-left: 10px;
+}
+.p-pst{
+  color: white;
+  max-width: 500px;
+  font-size: 18px;
+}
+.home-content p a{
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  width: 200px;
+  display:inline-block;
+  text-align: center;
+}
+
+/***
+Contact
+*****/
+.cnt-content{
+  max-width: 500px;
+  padding-left: 10px;
+  position: relative;
+}
+.overlay-infos{
+background-color: #084663;
+  position: absolute;
+  top: 35%;
+  right:-400px;
+  padding: 8px 17px;
+  display:none;
+}
+.overlay-infos span{
+  color: #F8AB30;
+}
+
+
+.h1-lg{
+  font-size: 50px;
+  color: #F8AB30;
+  font-weight: bold;
+}
+.cnt-content p{
+  color: white;
+  font-size: 17px;
+}
+.cnt-content form{
+  text-align: center;
+  padding-top: 10px;
+}
+.cnt-content input,.cnt-content textarea{
+  background-color: #084663;
+  border: none;
+  outline: none;
+  width: 390px;
+  color: white;
+}
+.cnt-content input{
+  margin-bottom: 20px;
+
+  height: 40px;
+  padding-left: 8px;
+}
+.cnt-content textarea{
+  height: 150px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.cnt-content input[type=submit]{
+  width: auto;
+  color: #F8AB30;
+  border: 1px solid #F8AB30;
+  margin-right: -245px;
+
+}
+
+/**
+blog
+****/
+.blog-content{
+  height: 100vh;
+  text-align: center;
+
+}
+.blog-content h1{
+  padding-top:  50vh;
+
+
+}
+/**
+SoftSkills
+*****/
+.skills-content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+/**************
+components style
+**********/
+/*Skills*/
+.skills-container{
+  position: relative;
+  color:#F8AB30;
+  text-transform:uppercase;
+  width: 450px;
+  height: 400px;
+  font-weight: bold;
+  transform: translateX(-50px);
+}
+.skills-container span{
+  position: absolute;
+}
+.symfony{
+  top: 50%;
+  left: 40%;
+  animation: symfony 20s infinite;
+}
+.html{
+  top: 35%;
+  left: 19%;
+  animation: html 10s infinite;
+}
+.css{
+  top: 27%;
+  left: 45%;
+  animation: php 15s infinite;
+}
+.sass{
+  top: 35%;
+  right: 20%;
+  animation: php 30s infinite;
+
+}
+.composer{
+  top: 40%;
+  left: 40%;
+  opacity: 0.7;
+  animation: php 25s infinite;
+}
+.reactjs{
+  top: 50%;
+  left: 22%;
+  opacity: 0.7;
+  animation: php 10s infinite;
+}
+.json{
+  right: 25%;
+  top: 50%;
+  opacity: 0.7;
+  animation: php 35s infinite;
+}
+.git{
+  right: 48%;
+  top: 60%;
+  opacity: 0.7;
+  animation: php 17s infinite;
+}
+.php{
+  bottom: 30%;
+  left: 20%;
+  animation: php 23s infinite;
+}
+.javascript{
+  bottom: 30%;
+  left: 68%;
+  animation: javascript 12s reverse infinite;
+}
+
+.npm{
+  bottom: 22%;
+  left: 47%;animation: php 20s infinite;
+
+}
+
+
+@media only screen and (min-width:760px) {
+  /***
+  Basic general style
+  *******/
+  main{
+
+    overflow: hidden;
+    padding-left: 235px;
+
+  }
+
+  /*********
+  header
+  ******/
+  .header-container{
+    float: left;
+    width: 220px;
+    position: fixed;
+
+  }
+  .icon-menu{
+    display: none;
+  }
+  .logo{
+    text-align: center;
+
+  }
+  .nav-container{
+    display: block;
+
+    text-align: left;
+  }
+  /**
+  Contact
+****/
+.cnt-content{
+  width: 500px;
+}
+.overlay-infos{
+  display:block;
+}
+
+}

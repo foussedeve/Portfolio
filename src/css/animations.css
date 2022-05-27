@@ -1,0 +1,137 @@
+
+@keyframes rot {
+form
+{ transform: translateX(20px);}
+
+to{transform: rotate(0.5turn);}
+}
+@keyframes slidein {
+  0%{
+    transform: translateX(0);
+    transform: translateY(0px);
+    transform: rotate(0turn);
+  }
+  30%{  transform: translateX(50px);
+
+  }
+  50%{
+    transform: rotate(0.5turn);
+
+  }
+
+
+  90%{
+    transform: translateY(100px);
+      transform: rotate(0.5turn);
+      transform: translateX(90px);
+  }
+  100%{
+    transform: translateX(0);
+    transform: translateY(0px);
+    transform: rotate(0.turn);
+  }
+}
+@keyframes html {
+  0%{
+    transform: translateX(0);
+    transform: translateY(0px);
+    transform: rotate(0turn);
+  }
+  25%{  transform: translateX(50px);
+
+  }
+  50%{
+    transform: rotate(0.25turn);
+
+  }
+
+
+  75%{
+    transform: translateY(100px);
+      transform: rotate(0.75turn);
+      transform: translateX(90px);
+  }
+  100%{
+    transform: translateX(0);
+    transform: translateY(0px);
+    transform: rotate(0.turn);
+  }
+}
+@keyframes symfony {
+  0%{
+    transform: translateX(0);
+    transform: translateY(0px);
+    transform: rotate(0turn);
+  }
+  25%{  transform: translateX(50px);
+
+  }
+  50%{
+    transform: rotate(0.25turn);
+
+  }
+
+
+  75%{
+    transform: translateY(40px);
+      transform: rotate(0.75turn);
+      transform: translateX(90px);
+  }
+  100%{
+    transform: translateX(0);
+    transform: translateY(0px);
+    transform: rotate(0.turn);
+  }
+}
+@keyframes php {
+  0%{
+    transform: translateX(0);
+    transform: translateY(0px);
+    transform: rotate(0turn);
+  }
+  25%{  transform: translateX(50px);
+
+  }
+  50%{
+    transform: rotate(0.25turn);
+
+  }
+
+
+  75%{
+    transform: translateY(100px);
+      transform: rotate(0.75turn);
+      transform: translateX(90px);
+  }
+  100%{
+    transform: translateX(0);
+    transform: translateY(0px);
+    transform: rotate(0.turn);
+  }
+}
+@keyframes javascript {
+  0%{
+    transform: translateX(0);
+    transform: translateY(0px);
+    transform: rotate(0turn);
+  }
+  25%{  transform: translateX(-30px);
+
+  }
+  50%{
+    transform: rotate(-0.25turn);
+
+  }
+
+
+  75%{
+    transform: translateY(-15px);
+      transform: rotate(0.75turn);
+      transform: translateX(90px);
+  }
+  100%{
+    transform: translateX(0);
+    transform: translateY(0px);
+    transform: rotate(0.turn);
+  }
+}
